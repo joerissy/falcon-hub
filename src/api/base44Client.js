@@ -108,3 +108,6 @@ export const db = {
 
 export const base44 = db
 export default db
+
+// Set global variable for Base44 compatibility
+globalThis.__B44_DB__ = db

@@ -1,0 +1,17 @@
+{
+  "name": "Conversation",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the conversation"
+    },
+    "last_message_preview": {
+      "type": "string",
+      "description": "Preview of the last message"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

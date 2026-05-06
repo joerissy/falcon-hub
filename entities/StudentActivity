@@ -1,0 +1,77 @@
+{
+  "name": "StudentActivity",
+  "type": "object",
+  "properties": {
+    "student_email": {
+      "type": "string"
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "classroom_id": {
+      "type": "string"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "messages_sent": {
+      "type": "number",
+      "default": 0
+    },
+    "study_minutes": {
+      "type": "number",
+      "default": 0
+    },
+    "mode_used": {
+      "type": "string",
+      "enum": [
+        "chat",
+        "concept",
+        "summarizer",
+        "quiz",
+        "flashcard"
+      ]
+    },
+    "quiz_score": {
+      "type": "number",
+      "description": "Quiz accuracy percentage 0-100"
+    },
+    "quiz_id": {
+      "type": "string",
+      "description": "ID of the quiz taken"
+    },
+    "quiz_title": {
+      "type": "string",
+      "description": "Title of the quiz taken"
+    },
+    "quiz_answers": {
+      "type": "array",
+      "description": "Per-question breakdown: question text, chosen option index, correct option index",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "chosen_index": {
+            "type": "number"
+          },
+          "correct_index": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "student_email",
+    "classroom_id"
+  ]
+}

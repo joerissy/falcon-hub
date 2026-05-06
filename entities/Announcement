@@ -1,0 +1,37 @@
+{
+  "name": "Announcement",
+  "type": "object",
+  "properties": {
+    "classroom_id": {
+      "type": "string",
+      "description": "The classroom this announcement belongs to"
+    },
+    "teacher_email": {
+      "type": "string",
+      "description": "Email of the teacher who posted"
+    },
+    "teacher_name": {
+      "type": "string",
+      "description": "Display name of the teacher"
+    },
+    "title": {
+      "type": "string",
+      "description": "Announcement title"
+    },
+    "message": {
+      "type": "string",
+      "description": "Announcement body text"
+    },
+    "pinned": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this announcement is pinned to top"
+    }
+  },
+  "required": [
+    "classroom_id",
+    "teacher_email",
+    "title",
+    "message"
+  ]
+}

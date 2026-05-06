@@ -1,0 +1,76 @@
+{
+  "name": "Quiz",
+  "type": "object",
+  "properties": {
+    "classroom_id": {
+      "type": "string"
+    },
+    "classroom_name": {
+      "type": "string"
+    },
+    "teacher_email": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "description": "Array of quiz questions with options and correct answer",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "correct_index": {
+            "type": "number"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "default": "draft"
+    },
+    "allow_ai_reviewer": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether students can generate an AI reviewer for this quiz"
+    },
+    "teacher_reviewer": {
+      "type": "string",
+      "description": "Optional reviewer/study guide written by the teacher"
+    },
+    "reviewer_file_url": {
+      "type": "string",
+      "description": "Optional file URL attached as reviewer material by the teacher"
+    },
+    "reviewer_file_name": {
+      "type": "string",
+      "description": "Original filename of the attached reviewer file"
+    }
+  },
+  "required": [
+    "classroom_id",
+    "teacher_email",
+    "title",
+    "questions"
+  ]
+}

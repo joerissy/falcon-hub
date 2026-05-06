@@ -61,7 +61,7 @@ export default function Landing() {
           {/* Falcon Mascot */}
           <div className="flex justify-center mb-5">
             <img
-              src="https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/1f99ebf78_684434411_1447343886627885_3205513454921292553_n.png"
+              src="/favicon.svg"
               alt="FalconHub AI tutor mascot"
               width="120"
               height="120"

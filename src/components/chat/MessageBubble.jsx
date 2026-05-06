@@ -101,7 +101,7 @@ export default function MessageBubble({ message }) {
     return (
       <div className="flex gap-3 group justify-start w-full">
         <img
-          src="https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/1f99ebf78_684434411_1447343886627885_3205513454921292553_n.png"
+          src="/favicon.svg"
           alt="Falcon"
           className="h-7 w-7 object-contain mt-1 shrink-0"
           loading="lazy"
@@ -123,7 +123,7 @@ export default function MessageBubble({ message }) {
     <div className={cn("flex gap-3 group", isUser ? "justify-end" : "justify-start")}>
       {!isUser && (
         <img
-          src="https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/1f99ebf78_684434411_1447343886627885_3205513454921292553_n.png"
+          src="/favicon.svg"
           alt="Falcon"
           className="h-7 w-7 object-contain mt-1 shrink-0"
           loading="lazy"

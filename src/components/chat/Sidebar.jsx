@@ -86,7 +86,7 @@ export default function Sidebar({ conversations, activeId, activeMode, onSelectM
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <img
-                src="https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/1f99ebf78_684434411_1447343886627885_3205513454921292553_n.png"
+                src="/favicon.svg"
                 alt="Falcon"
                 className="h-7 w-7 object-contain"
                 loading="eager"

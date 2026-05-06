@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Mic, MicOff, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const FALCON_IMG = "https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/da900615d_generated_image.png";
+const FALCON_IMG = "/favicon.svg";
 
 export default function VoiceMode({ onClose, onSend }) {
   const [isListening, setIsListening] = useState(false);

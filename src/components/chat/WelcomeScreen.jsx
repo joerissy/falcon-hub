@@ -130,7 +130,7 @@ export default function WelcomeScreen({ onSuggestionClick, activeMode = 'chat', 
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-primary/20 blur-xl rounded-full" />
           <div className="relative bg-gradient-to-b from-card to-accent/30 border border-border/60 rounded-3xl p-5 shadow-xl">
             <img
-              src="https://media.db.com/images/public/69ef66fe4f340c1dcd4f7578/1f99ebf78_684434411_1447343886627885_3205513454921292553_n.png"
+              src="/favicon.svg"
               alt="Falcon mascot"
               className="h-32 w-32 object-contain drop-shadow-lg"
               loading="lazy"

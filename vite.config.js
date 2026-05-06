@@ -11,10 +11,10 @@ export default defineConfig({
       // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.
       // can be removed if the code has been updated to use the new SDK imports from @base44/sdk
       legacySDKImports: process.env.BASE44_LEGACY_SDK_IMPORTS === 'true',
-      hmrNotifier: true,
-      navigationNotifier: true,
-      analyticsTracker: true,
-      visualEditAgent: true
+      hmrNotifier: false, // Disable to prevent proxy issues
+      navigationNotifier: false, // Disable to prevent proxy issues
+      analyticsTracker: false, // Disable to prevent proxy issues
+      visualEditAgent: false // Disable to prevent proxy issues
     }),
     react(),
   ]
